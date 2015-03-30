@@ -1,0 +1,12 @@
+{
+  "name": "Node02",
+  "version": "0.0.0",
+  "dependencies": {
+    "express": "~3.4.8",
+    "async" : "*",
+    "log4js":"*",
+ "jsonfile":"*",
+	"util": "*"
+
+  }
+}
