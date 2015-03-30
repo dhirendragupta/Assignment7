@@ -5,8 +5,12 @@
     "express": "~3.4.8",
     "async" : "*",
     "log4js":"*",
- "jsonfile":"*",
-	"util": "*"
+    "jsonfile":"*",
+    "util": "*",
+    "grunt": "~0.4.4",
+    "grunt-contrib-jshint": "latest",
+    "jshint-stylish": "latest",
+    "grunt-contrib-uglify": "latest"
 
   }
 }
