@@ -1,6 +1,10 @@
 {
   "name": "Node02",
   "version": "0.0.0",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/dhirendragupta/Assignment7.git"
+  },
   "dependencies": {
     "express": "~3.4.8",
     "async" : "*",
