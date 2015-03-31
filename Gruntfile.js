@@ -62,6 +62,10 @@ module.exports = function(grunt) {
   // make sure you have run npm install so our app can find these
   
   grunt.registerTask('default', ['uglify','jshint']);
+
+  grunt.registerTask('cibuild', ['uglify','jshint']);
+
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-testem');
 }

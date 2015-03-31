@@ -8,9 +8,18 @@
     "jsonfile":"*",
     "util": "*",
     "grunt": "~0.4.4",
-    "grunt-contrib-jshint": "latest",
     "jshint-stylish": "latest",
-    "grunt-contrib-uglify": "latest"
+    "grunt-contrib-uglify": "latest",
+    	"grunt-cli": "0.1.6",
+        "grunt": "~0.4.4",
+        "grunt-contrib-clean": "latest",
+        "grunt-contrib-jshint": "latest",
+        "grunt-contrib-qunit": "latest",
+        "grunt-contrib-connect": "latest",
+        "grunt-qunit-junit": "latest",
+        "grunt-qunit-cov": "latest",
+	"grunt-testem": "latest",
+        "grunt-contrib-csslint": "*"
 
   }
 }
