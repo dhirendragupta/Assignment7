@@ -22,7 +22,6 @@
         "grunt-contrib-connect": "latest",
         "grunt-qunit-junit": "latest",
         "grunt-qunit-cov": "latest",
-	"grunt-testem": "latest",
         "grunt-contrib-csslint": "*"
 
   }

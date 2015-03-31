@@ -20,39 +20,27 @@ module.exports = function(grunt) {
   // this default task will go through all configuration (dev and production) in each task 
   
 
-  // this task will only run the dev configuration 
- // grunt.registerTask('dev', ['jshint:dev', 'uglify:dev']);
-
-  // only run production configuration 
-  //grunt.registerTask('production', ['jshint:production', 'uglify:production']);
-
-
-    // all of our configuration will go here
-    // configure jshint to validate js files -----------------------------------
-    
-
-    // all of our configuration will go here
-    // configure jshint to validate js files -----------------------------------
-    jshint: {
+     jshint: {
       options: {
         reporter: require('jshint-stylish') // use jshint-stylish to make our errors look and read good
       },
 
       // when this task is run, lint the Gruntfile and all js files in src
-      build: ['Gruntfile.js', 'src/**/*.js']
+      build: ['Grunfile.js', 'src/**/*.js']
     },
 
-
-     uglify: {
+      uglify: {
       options: {
         banner: '/*\n <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> \n*/\n'
       },
       build: {
         files: {
-          'dist/js/all.min.js': ['src/js/Assignment7.js', 'src/js/CRUD.js' , 'src/js/parse.js']         }
+          'dist/js/all.min.js': ['src/js/Assignment7.js', 'src/js/CRUD.js' , 'src/js/parse.js']
+        }
       }
     }
 
+     
 });
 
 // ===========================================================================
@@ -63,9 +51,8 @@ module.exports = function(grunt) {
   
   grunt.registerTask('default', ['uglify','jshint']);
 
-  grunt.registerTask('cibuild', ['uglify','jshint']);
+  grunt.registerTask('cibuild', ['uglify','jshint',]);
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-testem');
 }

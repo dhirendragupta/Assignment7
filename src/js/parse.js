@@ -34,7 +34,7 @@ exports.parseRequestBody =function(req,callback){
 //3.a method to add new students in repository 
 exports.createStudent=function(newStud, callback){
 	students.push(newStud);
-	if(students.length != 0){
+	if(students.length !== 0){
 		callback(null,newStud);
 	}
 };
@@ -53,7 +53,7 @@ exports.updateStudentByEmail = function (email, updateStudent, callback) {
     	callback("Record not found",updateStudent);
     	return;
     }
-    if (students.length != 0)
+    if (students.length !== 0)
         callback(null, updateStudent);
 };
 
@@ -94,21 +94,21 @@ var insertInSub=function(){
 		switch (students[i].enrolledSubjects[j].subjectId) {
 		    case "123":
 		        count1=1;
-		        var score=students[i].enrolledSubjects[j].Score;
-		        var obj={id:students[i].id,score:score};
-		        sub1.push(obj);
+		        var score1=students[i].enrolledSubjects[j].Score;
+		        var obj1={id:students[i].id,score1:score};
+		        sub1.push(obj1);
 		        break;
 		    case "124":
 		    	count2=2;
-		        var score=students[i].enrolledSubjects[j].Score;
-		        var obj={id:students[i].id,score:score};
-		        sub2.push(obj);
+		        var score2=students[i].enrolledSubjects[j].Score;
+		        var obj2={id:students[i].id,score2:score};
+		        sub2.push(obj2);
 		        break;
 		    case "125":
 		       	count3=3;
-		        var score=students[i].enrolledSubjects[j].Score;
-		        var obj={id:students[i].id,score:score};
-		        sub3.push(obj);
+		        var score3=students[i].enrolledSubjects[j].Score;
+		        var obj3={id:students[i].id,score3:score};
+		        sub3.push(obj3);
 		        break;
 		    }
 			j++;
@@ -142,7 +142,7 @@ exports.writToFile=function(){
 	}
 	writeJson(result,file);
 	insertInSub();
-}
+};
 
 //function to write in required json format with the help of jsonfile module.
 var writeJson= function(result,file){

@@ -5,7 +5,7 @@ var Student=function(id,email,name,enrolledSubjects){
 	this.email=email;
 	this.name=name;
 	this.enrolledSubjects=enrolledSubjects;
-}
+};
 //exporting create function
 exports.create = function(req,res) {
 
@@ -79,5 +79,4 @@ exports.delete=function(req,res){
         parse.writToFile();
        	res.end("Record deleted");
 	});
-}
-
+};
